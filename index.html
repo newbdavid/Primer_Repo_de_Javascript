@@ -27,19 +27,59 @@
 //        console.log(undef);
 //        console.log(varnull);
         
-        var arregloString = ["1",'2','3'];
-        console.log(arregloString)
-        var arregloNumeros = [1,2,3];
-        console.log(arregloNumeros);
-
-        var arregloFloats = [1.2342,2.4234,3.098];
-        console.log(arregloFloats)
-
-        var arregloBooleano = [true,false,true];
+//        var arregloString = ["1",'2','3'];
+//        console.log(arregloString)
+//        var arregloNumeros = [1,2,3];
+//        console.log(arregloNumeros);
+//
+//        var arregloFloats = [1.2342,2.4234,3.098];
+//        console.log(arregloFloats)
+//
+//        var arregloBooleano = [true,false,true];
+//        
+//        var arregloTodo = ['Nombre',123,54.2,true,false,null,undefined,"apellido"];
+//        console.log(arregloTodo);
         
-        var arregloTodo = ['Nombre',123,54.2,true,false,null,undefined,"apellido"];
-        console.log(arregloTodo);
+        //Objetos
 
+        var David = {
+            'nombre': 'David',
+            'Apellido': 'Moncayo',
+            edad: 27,
+            mascotas:['Pancho','Kaiser'],
+            //un arreglo de objetos
+            hermanos: [{
+                nombre: 'Sebastian',
+                Apellido: 'Moncayo'
+        },
+                       {
+                nombre: 'George',
+                Apellido: 'Moncayo'           
+                       }],//Ahora una funcion
+            getNombre: function() {
+                return David.nombre;
+            },
+            getApellido: function() {
+                return this.Apellido;
+            },
+            setApellido: function(nuevoApellido){
+                this.Apellido=nuevoApellido;
+            }
+            
+        }
+        console.log(David);
+        
+        console.log("Acceder nombre");
+        console.log(David.nombre);
+        console.log("Acceder edad");
+        console.log(David.edad);
+        console.log("Acceder funcion nombre");
+        console.log(David.getNombre());
+        
+        console.log("Acceder funcion codigo");
+        console.log(David.getNombre);
+        David.setApellido('Balseca');
+        console.log(David.getApellido());
         
     </script>
 </head>
