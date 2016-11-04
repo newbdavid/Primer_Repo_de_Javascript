@@ -63,7 +63,9 @@ El siguiente es un ejemplo de un informe, la informacion es irrelevante, más lo
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
   * <a href="#postman">Postman</a>
   * <a href="#tags">Tags</a>
-  
+    * <<a href="#h1yh2">H1 y H2</a>
+    * <<a href="#paragraphs">Paragraphs p</a>
+    * <<a href="#ulolli">Ul Ol y li</a>  
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
 
 <a name="tema"></a>
@@ -73,14 +75,67 @@ El tema de la práctica es: `Introduccion a la Web`
 <a name="objetivos"></a>
 ## Objetivos
 
-- Desarrollar el conocimiento Web
-- Conocer herramientas de desarrolladores web como: postman, inspetor web
+- Tener un conocimiento introductorio de lo que es la web y como esta diseñada internamente
+- Explorar sitios donde se pueda aprender sobre el desarrollo de la web
+- Conocer herramientas de desarrolladores web como: postman, inspetor web del navegador
+- Obtener conocimiento introductorio de herramientas como Node.js
 - Aprender el uso de lenguaje HTML CSS
 
 <a name="marco-teorico"></a>
 ## Marco Teorico
-<a name="defhtml"></a>
-### Definición HTML
+<a name="httpMethods"></a>
+### Métodos HTTP
+
+HTTP define una seria predefinidade métodos de petición (algunas veces referido como "verbos") que pueden utilizarse. El protocolo tiene flexibilidad para ir añadiendo nuevos métodos y para así añadir nuevas funcionalidades. El número de métodos de petición se han ido aumentando según se avanzaban en las versiones4 . Cada método indica la acción que desea que se efectúe sobre el recurso identificado. Lo que este recurso representa depende de la aplicación del servidor. Por ejemplo el recurso puede corresponderse con un archivo que reside en el servidor. (Fuente: [Wikipedia] (https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol))
+<br>
+#### GET
+Lo que hace es pedir un recurso específico, las aplicaciones que causen efectos no deberían usarlo puesto que transmite información a través de URI agregando parámetros a la URL.
+
+<br>
+#### HEAD
+Pide una respuesta igual a lo que haría una petición GET solo que en esta el cuerpo no se devuelve, es útil para recuperar los metadatos de respuesta sin enviar todo.
+<br>
+
+#### POST
+Envía los datos para que sean procesados por el recurso identificado. Los datos se incluirán en el cuerpo de la petición. Esto puede resultar en la creación de un nuevo recurso o de las actualizaciones de los recursos existentes o ambas cosas.
+<br>
+
+#### PUT
+Sube, carga o realiza un upload de un recurso específico, es el camino más eficiente para subir archivos a un servidor, esto es porque en POST utiliza un mensaje multiparte y el mensaje es decodificado por el servidor. En contraste, el método PUT es que los servidores de hosting compartido no lo tienen habilitado
+<br>
+
+#### DELETE
+Borra el recurso especificado.
+<br>
+
+<a name="codigosHTTP"></a>
+### Codigos HTTP
+Hay una gran variedad de códigos de respuesta de HTTP, se dividen en cinco familias o tipos, cada una tiene una gran variedad de casos se listarán los tipos:
+
+<br>
+#### Familia 1xx: Respuestas informativas
+Petición recibida, continuando proceso. Esta respuesta significa que el servidor ha recibido los encabezados de la petición, y que el cliente debería proceder a enviar el cuerpo de la misma (en el caso de peticiones para las cuales el cuerpo necesita ser enviado; por ejemplo, una petición Hypertext Transfer Protocol). Si el cuerpo de la petición es largo, es ineficiente enviarlo a un servidor, cuando la petición ha sido ya rechazada, debido a encabezados inapropiados. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP))
+
+<br>
+#### Familia 2xx: Peticiones correctas
+Esta clase de código de estado indica que la petición fue recibida correctamente, entendida y aceptada.
+
+<br>
+#### Familia 3xx: Redirecciones
+En esta familia el cliente tiene que tomar una acción adicional para completar la petición
+Esta clase de código de estado indica que una acción subsecuente necesita efectuarse por el agente de usuario para completar la petición. La acción requerida puede ser llevada a cabo por el agente de usuario sin interacción con el usuario si y solo si el método utilizado en la segunda petición es GET o HEAD. El agente de usuario no debe redirigir automáticamente una petición más de 5 veces, dado que tal funcionamiento indica usualmente un Bucle infinito.
+
+<br>
+#### Familia 4xx: Errores del cliente
+La solicitud contiene sintaxis incorrecta o no puede procesarse.
+La intención de la clase de códigos de respuesta 4xx es para casos en los cuales el cliente parece haber errado la petición. Excepto cuando se responde a una petición HEAD, el servidor debe incluir una entidad que contenga una explicación a la situación de error, y si es una condición temporal o permanente. Estos códigos de estado son aplicables a cualquier método de solicitud (como GET o POST). Los agentes de usuario deben desplegar cualquier entidad al usuario. Estos son típicamente los códigos de respuesta de error más comúnmente encontrados. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP))
+
+<br>
+#### Familia 5xx: Errores del servidor
+Esto indica que el servidor falló a completar una solicitud aparentemente válida.
+Indican casos en los cuales el servidor tiene registrado aún antes de servir la solicitud, que está errado o es incapaz de ejecutar la petición. El servidor debe incluir la entidad que tenga la explicación de la situación de error y debe informar si es temporal o permanente, siempre y cuando no sea respondiendo a un método `HEAD`
+
+
 
 En informática, la World Wide Web (WWW) o red informática mundial1 es un sistema de distribución de documentos de hipertexto o hipermedios interconectados y accesibles vía Internet. Con un navegador web, un usuario visualiza sitios web compuestos de páginas web que pueden contener texto, imágenes, vídeos u otros contenidos multimedia, y navega a través de esas páginas usando hiperenlaces. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/World_Wide_Web))
 <br>
