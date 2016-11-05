@@ -63,9 +63,9 @@ El siguiente es un ejemplo de un informe, la informacion es irrelevante, más lo
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
   * <a href="#postman">Postman</a>
   * <a href="#tags">Tags</a>
-    * <<a href="#h1yh2">H1 y H2</a>
-    * <<a href="#paragraphs">Paragraphs p</a>
-    * <<a href="#ulolli">Ul Ol y li</a>  
+    * <a href="#h1yh2">H1 y H2</a>
+    * <a href="#paragraphs">Paragraphs p</a>
+    * <a href="#ulolli">Ul Ol y li</a>  
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
 
 <a name="tema"></a>
@@ -226,7 +226,8 @@ Una vez que se usa código de otros desarrolladores el NPM hace que recibir actu
 <a href="#cabecera">A la cabecera</a>
 
 <a name="xml"></a>
-### Node Package Manager
+### eXtensible Markup Language
+Se traduce como Lenguaje de Marcado Extensible es un metalenguaje que permite definir lenguajes de marcas desarrollado por el World Wide Web Consortium utilizado para almacenar datos de forma legible. Proviene del lenguaje SGML y permite definir la gramatica de lenguajes específicos para estructurar documentos grandes. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Extensible_Markup_Language))
 
 
 <br><br>
@@ -244,6 +245,31 @@ La Web se desarrolló entre marzo de 1989 y diciembre de 1990.2 3 por el inglés
 
 <a name="desarrollo"></a>
 ## Desarrollo del informe
+Aqui se incluiran capturas de pantalla de lo visto en esta clase
+
+<a name="postman"></a>
+### Postman
+Postman es una herramienta que permite testear APIs de manera eficiente y rapida, viendo las peticiones HTTP, los headers y hasta un preview sin css de la pagina que se está probando
+<p align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/240px-WWW_logo_by_Robert_Cailliau.svg.png" width="300" height="200">
+</p>
+
+La página que vamos a probar es la de El Hobbit [la Batalla de los 5 ejercitos](http://middle-earth.thehobbit.com/)
+
+<p align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/240px-WWW_logo_by_Robert_Cailliau.svg.png" width="300" height="200">
+</p>
+
+El resultado al ver esta página en Postman fueron 6 headers y todos los enunciados de los juegos dentro de la pagina con sus botones correspondientes sin CSSs
+
+<p align="center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/240px-WWW_logo_by_Robert_Cailliau.svg.png" width="300" height="200">
+</p>
+
+<a name="tags"></a>
+### Tags
+
+
 
 ### Imagenes desde Github **IMPORTANTE**
 
