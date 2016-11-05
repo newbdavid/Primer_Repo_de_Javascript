@@ -144,9 +144,90 @@ Hoy en día existen muchos navegadores, estos sirven como software para presenta
 <img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/navegadores-web.jpeg?raw=true" >
 </p>
 
-En informática, la World Wide Web (WWW) o red informática mundial1 es un sistema de distribución de documentos de hipertexto o hipermedios interconectados y accesibles vía Internet. Con un navegador web, un usuario visualiza sitios web compuestos de páginas web que pueden contener texto, imágenes, vídeos u otros contenidos multimedia, y navega a través de esas páginas usando hiperenlaces. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/World_Wide_Web))
+<a name="www"></a>
+### La WWW (World Wide Web)
+Esta es la red informatica mundial, un sistema de distribución de documentos de hipertexto o hipermedios accesibles via la internet. El padre de la Web es Tim Berners Lee con la ayuda de Robert Cailliau cuando trabajaban en el CERN en Ginebra, Suiza.
+<p align="center">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/navegadores-web.jpeg?raw=true" >
+</p>
+
 <br>
 <a href="#cabecera">A la cabecera</a>
+
+<a name="w3c"></a>
+### La W3C (World Wide Web Consortium)
+El Wordl Wide Web COnsortium es una comunidad internacional que desarrolla estándares abiertos para asegurar el crecimiento a largo plazo de la Web.
+la W3C opera bajo un Código de Conducta ética y profesional.
+
+<p align="center">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/navegadores-web.jpeg?raw=true" >
+</p>
+<br>
+<a href="#cabecera">A la cabecera</a>
+
+<a name="w3cSchools"></a>
+### La W3C Schools
+W3Schools es un sitio web popular para aprender sobre tecnologías web en línea. Incluye una gran variedad de tutoriales y objetos interactivos para aprender cosas referentes a:
+- HTML
+- CSS
+- JavaScript
+- PHP
+- SQL
+- Bootstrap y
+- JQuery
+
+<p align="center">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/navegadores-web.jpeg?raw=true" >
+</p>
+<br>
+<a href="#cabecera">A la cabecera</a>
+
+<a name="doctype"></a>
+### Doctype
+Doctype asocia un documento SGML o XML a saber que tipo de documento es, esto viene del inglés DTD (Doctype Declaration)
+<br>
+<a href="#cabecera">A la cabecera</a>
+
+<a name="html"></a>
+### HTML (HiperText Markup Language)
+Es el lenguaje de marcado de etiquetas de hipertexto el cual se utiliza para hacer páginas web, esto es interpretado por el navegador y mostrado al usuario
+<p align="center">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/navegadores-web.jpeg?raw=true" >
+</p>
+<br>
+<a href="#cabecera">A la cabecera</a>
+
+<a name="estilosCSS"></a>
+### Estilos CSS (Cascade Style Sheet)
+El CSS es utilizado para dar estilo a un documento html por medio de nombrar la etiqueta, la clase o el id al que se está dando estilo. Esto es renderizado junto con el HTML por el navegador para dar el estilo final a la página mostrada hacia el usuario.
+<p align="center">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/navegadores-web.jpeg?raw=true" >
+</p>
+<br>
+<a href="#cabecera">A la cabecera</a>
+
+<a name="herramientaInspeccionar"></a>
+### Herramienta Inspeccionar
+El Inspector de un navegador sirve para examinar la estructura y diseño de una página. Tambien se pueden hacer modificaciones en tiempo real de ambos aspectos.
+<p align="center">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/navegadores-web.jpeg?raw=true" >
+</p>
+<br>
+<a href="#cabecera">A la cabecera</a>
+
+<a name="npm"></a>
+### Node Package Manager
+El Administrador de Paquetes de Node da la facilidad a los desarrolladores para compartir el codigo que ellos han creado para solucionar problemas particulares y dar este código a otros desarrolladores para reusarlo en sus propias aplicaciones.
+Una vez que se usa código de otros desarrolladores el NPM hace que recibir actualizaciones del mismo sea muy facil.
+<p align="center">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/navegadores-web.jpeg?raw=true" >
+</p>
+<br>
+<a href="#cabecera">A la cabecera</a>
+
+<a name="xml"></a>
+### Node Package Manager
+
 
 <br><br>
 <p align="center">
