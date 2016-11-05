@@ -141,7 +141,7 @@ Indican casos en los cuales el servidor tiene registrado aún antes de servir la
 ### Navegador
 Hoy en día existen muchos navegadores, estos sirven como software para presentar paginas web y renderizar las hojas de estilos y el Javascript que las componen.
 <p align="center">
-<img src="https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true" width="500" height="800">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/navegadores-web.jpeg?raw=true" >
 </p>
 
 En informática, la World Wide Web (WWW) o red informática mundial1 es un sistema de distribución de documentos de hipertexto o hipermedios interconectados y accesibles vía Internet. Con un navegador web, un usuario visualiza sitios web compuestos de páginas web que pueden contener texto, imágenes, vídeos u otros contenidos multimedia, y navega a través de esas páginas usando hiperenlaces. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/World_Wide_Web))
