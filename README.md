@@ -90,7 +90,6 @@ HTTP define una seria predefinidade métodos de petición (algunas veces referid
 <br>
 #### GET
 Lo que hace es pedir un recurso específico, las aplicaciones que causen efectos no deberían usarlo puesto que transmite información a través de URI agregando parámetros a la URL.
-
 <br>
 #### HEAD
 Pide una respuesta igual a lo que haría una petición GET solo que en esta el cuerpo no se devuelve, es útil para recuperar los metadatos de respuesta sin enviar todo.
@@ -106,6 +105,9 @@ Sube, carga o realiza un upload de un recurso específico, es el camino más efi
 
 #### DELETE
 Borra el recurso especificado.
+<br>
+
+<a href="#cabecera">A la cabecera</a>
 <br>
 
 <a name="codigosHTTP"></a>
@@ -135,7 +137,12 @@ La intención de la clase de códigos de respuesta 4xx es para casos en los cual
 Esto indica que el servidor falló a completar una solicitud aparentemente válida.
 Indican casos en los cuales el servidor tiene registrado aún antes de servir la solicitud, que está errado o es incapaz de ejecutar la petición. El servidor debe incluir la entidad que tenga la explicación de la situación de error y debe informar si es temporal o permanente, siempre y cuando no sea respondiendo a un método `HEAD`
 
-
+<a name="navegador"></a>
+### Navegador
+Hoy en día existen muchos navegadores, estos sirven como software para presentar paginas web y renderizar las hojas de estilos y el Javascript que las componen.
+<p align="center">
+<img src="https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true" width="500" height="800">
+</p>
 
 En informática, la World Wide Web (WWW) o red informática mundial1 es un sistema de distribución de documentos de hipertexto o hipermedios interconectados y accesibles vía Internet. Con un navegador web, un usuario visualiza sitios web compuestos de páginas web que pueden contener texto, imágenes, vídeos u otros contenidos multimedia, y navega a través de esas páginas usando hiperenlaces. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/World_Wide_Web))
 <br>
