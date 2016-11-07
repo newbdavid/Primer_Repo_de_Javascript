@@ -1,39 +1,6 @@
-# Estructura
-
-Un informe debe de seguir la siguiente estructura:
-
-- **Cabecera**
-  * Materia
-  * Tema
-  * Fecha
-  * Nombre
-  * Nombre del Profesor (TANIA CALLE Y ADRIAN EGUEZ)
-  * Número de Informe (El número de informe es secuencial)
-- **Índice de contenidos**
-  * En el indice de contenidos debemos de tener los indices y sub indices (excepto de la cabecera y el índice) de toda la estructura del informe.
-- **Tema**
-  * Un nombre o descrición por ejemplo (Tags HTML o Introducción a la Web)
-- **Objetivos**
-  * Los objetivos es que es lo que se va a lograr con los informes, si en clase se aprendio acerca de DOCTYPEs entonces eso es un objetivo, si aprendierono TAGS HTML, ese es otro objetivo y así.
-- **Marco Teorico**
-  * En el Marco Teórico, lo que nos interesa es describir los conceptos que revisamos dentro de la clase, por ejemplo si revisamos el concepto de `navegador` entonces describiremos que es un navegador con referencias osea un LINK AL RECURSO, si es un libro el link a una pagina informativad del libro y en que parte del libro se encontro dicha información.
-- **Desarrollo de la Práctica**
-  * El desarrollo de la práctica son `capturas` de pantalla de lo que se hizo en clases y su `descripción`, por ejemplo si se utilizo el postman para conectarse con google y revisar los códigos de estatus HTTP, eso es lo que deberia de ir en las imágenes y descripciones.
-- **Conclusiones y Recomendaciones**
-  * Conclusiones son que objetivos se lograron y que se aprendió haciendo esos objetivos.
-  * Recomendaciones son que temas también o cuales temas estuvieron de más abordados en la clase, o también cómo se podría mejorar esa práctica.
-
-# Ejemplo de informe
-
-El siguiente es un ejemplo de un informe, la informacion es irrelevante, más lo que interesa es la estructura.
-
 # Introducción a la Web
 
 ### Materia : `Tecnologías Web con JavaScript`
-
-<p align="center">
-<img src="http://www.javatpoint.com/images/javascript/javascript_logo.png" width="300" height="200">
-</p>
 
 ### Tema : `Introducción a la Web` 
 ### Fecha : `2016-10-21`
@@ -148,7 +115,7 @@ Hoy en día existen muchos navegadores, estos sirven como software para presenta
 ### La WWW (World Wide Web)
 Esta es la red informatica mundial, un sistema de distribución de documentos de hipertexto o hipermedios accesibles via la internet. El padre de la Web es Tim Berners Lee con la ayuda de Robert Cailliau cuando trabajaban en el CERN en Ginebra, Suiza.
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/navegadores-web.jpeg?raw=true" >
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/www.jpg?raw=true" >
 </p>
 
 <br>
@@ -160,7 +127,7 @@ El Wordl Wide Web COnsortium es una comunidad internacional que desarrolla está
 la W3C opera bajo un Código de Conducta ética y profesional.
 
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/navegadores-web.jpeg?raw=true" >
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/W3C-Developers-Dark.png?raw=true" >
 </p>
 <br>
 <a href="#cabecera">A la cabecera</a>
@@ -177,7 +144,7 @@ W3Schools es un sitio web popular para aprender sobre tecnologías web en línea
 - JQuery
 
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/navegadores-web.jpeg?raw=true" >
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/w3schools.png?raw=true" >
 </p>
 <br>
 <a href="#cabecera">A la cabecera</a>
@@ -192,7 +159,7 @@ Doctype asocia un documento SGML o XML a saber que tipo de documento es, esto vi
 ### HTML (HiperText Markup Language)
 Es el lenguaje de marcado de etiquetas de hipertexto el cual se utiliza para hacer páginas web, esto es interpretado por el navegador y mostrado al usuario
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/navegadores-web.jpeg?raw=true" >
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/Html5-01-1024x768.jpg?raw=true" >
 </p>
 <br>
 <a href="#cabecera">A la cabecera</a>
@@ -201,7 +168,7 @@ Es el lenguaje de marcado de etiquetas de hipertexto el cual se utiliza para hac
 ### Estilos CSS (Cascade Style Sheet)
 El CSS es utilizado para dar estilo a un documento html por medio de nombrar la etiqueta, la clase o el id al que se está dando estilo. Esto es renderizado junto con el HTML por el navegador para dar el estilo final a la página mostrada hacia el usuario.
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/navegadores-web.jpeg?raw=true" >
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/CSS3.jpg?raw=true" >
 </p>
 <br>
 <a href="#cabecera">A la cabecera</a>
@@ -210,7 +177,7 @@ El CSS es utilizado para dar estilo a un documento html por medio de nombrar la 
 ### Herramienta Inspeccionar
 El Inspector de un navegador sirve para examinar la estructura y diseño de una página. Tambien se pueden hacer modificaciones en tiempo real de ambos aspectos.
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/navegadores-web.jpeg?raw=true" >
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/InspectorInception.png?raw=true" >
 </p>
 <br>
 <a href="#cabecera">A la cabecera</a>
@@ -220,7 +187,7 @@ El Inspector de un navegador sirve para examinar la estructura y diseño de una 
 El Administrador de Paquetes de Node da la facilidad a los desarrolladores para compartir el codigo que ellos han creado para solucionar problemas particulares y dar este código a otros desarrolladores para reusarlo en sus propias aplicaciones.
 Una vez que se usa código de otros desarrolladores el NPM hace que recibir actualizaciones del mismo sea muy facil.
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/navegadores-web.jpeg?raw=true" >
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/npm.jpg?raw=true" >
 </p>
 <br>
 <a href="#cabecera">A la cabecera</a>
@@ -228,19 +195,6 @@ Una vez que se usa código de otros desarrolladores el NPM hace que recibir actu
 <a name="xml"></a>
 ### eXtensible Markup Language
 Se traduce como Lenguaje de Marcado Extensible es un metalenguaje que permite definir lenguajes de marcas desarrollado por el World Wide Web Consortium utilizado para almacenar datos de forma legible. Proviene del lenguaje SGML y permite definir la gramatica de lenguajes específicos para estructurar documentos grandes. (Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Extensible_Markup_Language))
-
-
-<br><br>
-<p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/240px-WWW_logo_by_Robert_Cailliau.svg.png" width="300" height="200">
-</p>
-<br><br>
-<a name="hist"></a>
-### Historia y Facts
-
-La Web se desarrolló entre marzo de 1989 y diciembre de 1990.2 3 por el inglés Tim Berners-Lee con la ayuda del belga Robert Cailliau mientras trabajaban en el CERN en Ginebra, Suiza, y publicado en 1992. Desde entonces, Berners-Lee ha jugado un papel activo guiando el desarrollo de estándares Web (como los lenguajes de marcado con los que se crean las páginas web), y en los últimos años ha abogado por su visión de una Web semántica. Utilizando los conceptos de sus anteriores sistemas de hipertexto como ENQUIRE, el físico británico Tim Berners-Lee, un científico de la computación y en ese tiempo de los empleados del CERN, ahora director del World Wide Web Consortium (W3C), escribió una propuesta en marzo de 1989 con lo que se convertiría en la World Wide Web.4 la propuesta de 1989 fue destinada a un sistema de comunicación CERN pero Berners-Lee finalmente se dio cuenta que el concepto podría aplicarse en todo el mundo.5 En la CERN, la organización europea de investigación cerca de Ginebra, en la frontera entre Francia y Suiza,6 Berners-Lee y el científico de la computación belga Robert Cailliau propusieron en 1990 utilizar el hipertexto "para vincular y acceder a información de diversos tipos como una red de nodos en los que el usuario puede navegar a voluntad",7 y Berners-Lee terminó el primer sitio web en diciembre de ese año.8 Berners-Lee publicó el proyecto en el grupo de noticias alt.hypertext el 7 de agosto de 1991. (Fuente: <a href="https://es.wikipedia.org/wiki/World_Wide_Web">Wikipedia</a>)
-<br>
-<a href="#cabecera">A la cabecera</a>
 
 
 <a name="desarrollo"></a>
@@ -251,89 +205,87 @@ Aqui se incluiran capturas de pantalla de lo visto en esta clase
 ### Postman
 Postman es una herramienta que permite testear APIs de manera eficiente y rapida, viendo las peticiones HTTP, los headers y hasta un preview sin css de la pagina que se está probando
 <p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/240px-WWW_logo_by_Robert_Cailliau.svg.png" width="300" height="200">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/PostmanBIG.png?raw=true" width="1280" height="720">
 </p>
 
 La página que vamos a probar es la de El Hobbit [la Batalla de los 5 ejercitos](http://middle-earth.thehobbit.com/)
 
 <p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/240px-WWW_logo_by_Robert_Cailliau.svg.png" width="300" height="200">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/LetsPostThisThing.png?raw=true" width="1280" height="720">
 </p>
 
 El resultado al ver esta página en Postman fueron 6 headers y todos los enunciados de los juegos dentro de la pagina con sus botones correspondientes sin CSSs
 
 <p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/240px-WWW_logo_by_Robert_Cailliau.svg.png" width="300" height="200">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/ResultPostMan.png?raw=true" width="1280" height="720">
 </p>
-
+<br>
+<a href="#cabecera">A la cabecera</a>
 <a name="tags"></a>
 ### Tags
+Hay mucha variedad de Tags que se pueden usar para diferenets propositos.
 
+<a name="h1yh2"></a>
+#### H1, H2, y otros Hummers..
+Son utilizados para dar enfasis a los titulos por ejemplo
+Usemos `<h1>Soy un titulo random en H1</h1>` para lo siguiente
+<h1>Soy un titulo random en H1</h1>
 
+<a name="paragraphs"></a>
+#### Paragraphs
+Para hacer parrafos es facil solo se debe encapsular en `<p></p>` de la sigueinte forma:
+`<p>5 Si necesitan sabiduría, pídansela a nuestro generoso Dios, y él se la dará; no los reprenderá por pedirla. 6 Cuando se la pidan, asegúrense de que su fe sea solamente en Dios, y no duden, porque una persona que duda tiene la lealtad dividida y es tan inestable como una ola del mar que el viento arrastra y empuja de un lado a otro. 7 Esas personas no deberían esperar nada del Señor; 8 su lealtad está dividida entre Dios y el mundo, y son inestables en todo lo que hacen.
+9 Los creyentes que son pobres[a] pueden estar orgullosos, porque Dios los ha honrado; 10 y los que son ricos[b] deberían estar orgullosos de que Dios los ha humillado. Se marchitarán como una pequeña flor de campo. 11 Cuando el sol calienta mucho y se seca el pasto, la flor pierde su fuerza, cae y desaparece su belleza. De la misma manera, se marchitarán los ricos junto con todos sus logros.
+12 Dios bendice a los que soportan con paciencia las pruebas y las tentaciones, porque después de superarlas, recibirán la corona de vida que Dios ha prometido a quienes lo aman. 13 Cuando sean tentados, acuérdense de no decir: «Dios me está tentando». Dios nunca es tentado a hacer el mal[c] y jamás tienta a nadie. 14 La tentación viene de nuestros propios deseos, los cuales nos seducen y nos arrastran. 15 De esos deseos nacen los actos pecaminosos, y el pecado, cuando se deja crecer, da a luz la muerte.
+16 Así que no se dejen engañar, mis amados hermanos. 17 Todo lo que es bueno y perfecto es un regalo que desciende a nosotros de parte de Dios nuestro Padre, quien creó todas las luces de los cielos.[d] Él nunca cambia ni varía como una sombra en movimiento.[e] 18 Él, por su propia voluntad, nos hizo nacer de nuevo por medio de la palabra de verdad que nos dio y, de toda la creación, nosotros llegamos a ser su valiosa posesión.</p>`
 
-### Imagenes desde Github **IMPORTANTE**
+<p>5 Si necesitan sabiduría, pídansela a nuestro generoso Dios, y él se la dará; no los reprenderá por pedirla. 6 Cuando se la pidan, asegúrense de que su fe sea solamente en Dios, y no duden, porque una persona que duda tiene la lealtad dividida y es tan inestable como una ola del mar que el viento arrastra y empuja de un lado a otro. 7 Esas personas no deberían esperar nada del Señor; 8 su lealtad está dividida entre Dios y el mundo, y son inestables en todo lo que hacen.
+9 Los creyentes que son pobres[a] pueden estar orgullosos, porque Dios los ha honrado; 10 y los que son ricos[b] deberían estar orgullosos de que Dios los ha humillado. Se marchitarán como una pequeña flor de campo. 11 Cuando el sol calienta mucho y se seca el pasto, la flor pierde su fuerza, cae y desaparece su belleza. De la misma manera, se marchitarán los ricos junto con todos sus logros.
+12 Dios bendice a los que soportan con paciencia las pruebas y las tentaciones, porque después de superarlas, recibirán la corona de vida que Dios ha prometido a quienes lo aman. 13 Cuando sean tentados, acuérdense de no decir: «Dios me está tentando». Dios nunca es tentado a hacer el mal[c] y jamás tienta a nadie. 14 La tentación viene de nuestros propios deseos, los cuales nos seducen y nos arrastran. 15 De esos deseos nacen los actos pecaminosos, y el pecado, cuando se deja crecer, da a luz la muerte.
+16 Así que no se dejen engañar, mis amados hermanos. 17 Todo lo que es bueno y perfecto es un regalo que desciende a nosotros de parte de Dios nuestro Padre, quien creó todas las luces de los cielos.[d] Él nunca cambia ni varía como una sombra en movimiento.[e] 18 Él, por su propia voluntad, nos hizo nacer de nuevo por medio de la palabra de verdad que nos dio y, de toda la creación, nosotros llegamos a ser su valiosa posesión.</p>
 
-Se pueden usar imágenes desde nuestros archivos en github que constan de la siguiente URL:
+<a name="ulolli"></a>
+#### Ul Ol and Lo`li`pop
+Para esto tomare prestado codigo del la siguiente [fuente](http://html.hazunaweb.com/110.php)
+La leyenda es así: 
+- ul se utiliza para "unordered lists"
+- ol se utiliza para "ordered lists"
+- li es el "list item" de cualquiera de las dos de arriba
 
-- Github
-  * La url de github que es `https://github.com` 
-- Usuario
-  * La url de usuario de github que en este caso es: `/adrianeguez` 
-- Repositorio
-  * El repositorio de Github que estamos usando, en este caso es `/Tec_Web_Js_2016_B`
-- Rama o  Branch
-  * La rama de nuestro repositorio en este formato: `/blob/master`
-- El PATH
-  * La direccíon de nuesto archivo por ejemplo `/carpeta/subcarpeta/subsubcarpeta/archivo.png` en este ejemplo es `/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png` 
-- RAW
-  * Por ultimo mandamos un Query String Parameter de la con la variable `raw` y valor `true` de la siguiente manera: `?raw=true`
-  
-**Al final** nuestro url queda de la siguiente manera:
+Aqui un ejemplo de `ul`:
+`<ul>
+<li type="circle">Esto es un tipo de punto.</li>
+<li type="square">Este es otro.</li>
+<li type="disc">Y este es otro diferente.</li>
+</ul>`
+<ul>
+<li type="circle">Esto es un tipo de punto.</li>
+<li type="square">Este es otro.</li>
+<li type="disc">Y este es otro diferente.</li>
+</ul>
 
-#### `https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true`
-
-<p align="center">
-<img src="https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true" width="500" height="800">
-</p>
-
-Por ultimo podemos centrar las imagenes de la siguiente manera:
-
-
-```
-<p align="center">
-
-<img src="https://github.com/adrianeguez/Tec_Web_Js_2016_B/blob/master/Ejemplo%20de%20un%20Informe/Imagenes/Flujograma.png?raw=true" width="500" height="800">
-
-</p>
-```
-
-### Links dentro de github
-
-Para nosotros utilizar los Links dentro de Github debemos de hacer dos cosas:
-
-1. Definir un anchor name donde nosotros queramos mover cuando demos clic de la siguiente manera y formate (**NOTESE QUE ESTAN JUNTAS**):
-
-  ```
-  <a name="nombre"></a>
-  ## titulo2
-  ```
-2. Después de esto debemos de linkear mediante un texto por ejemplo en una lista de la siguiente manera (**NO ELVIDAR EL `#`**):
- 
-  ```
-  - <a href="#nombre">Dale clic aqui para ir al titulo 2</a>
-  ```
-  <a name="conrec"></a>
+Aqui un ejemplo de `ol`:
+`<ol>
+<li value="20">Este será el número 20. </li>
+<li>Este será el 21. </li>
+<li> Este será el 22. Y así sucesivamente. </li>
+</ol>`
+<ol>
+<li value="20">Este será el número 20. </li>
+<li>Este será el 21. </li>
+<li> Este será el 22. Y así sucesivamente. </li>
+</ol>
 
 <br>
 <a href="#cabecera">A la cabecera</a>
 
+<a name="conrec"></a>
 ## Conclusiones y Recomendaciones
 
-- Se recomienda mejorar la presentacion
+- El uso de postman te ayuda a ver que esta trayendo la pagina en sus llamadas y como optimizar el contenido transferido.
 - Se recomienda usar el ir a cabecera despues de terminar una seccion
-- Se aprendio el uso de HTML con Markdown
-- Conocimos herramientas de desarrollo web como postman e inspector web
-- Desarrollamos conocimientos de introducción Web
+- Se recomienda el uso de MarkDown Cheat Sheet para tener listo el contenido se puede ver [aqui](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- Se recomienda usar el inspector para jugar con la pagina y aprender mas sobre el uso de HTML y CSS
 
 <br>
 <a href="#cabecera">A la cabecera</a>
@@ -341,4 +293,4 @@ Para nosotros utilizar los Links dentro de Github debemos de hacer dos cosas:
 
 # ¡Gracias por su atención!
 
-Author: [Adrian Eguez](https://github.com/adrianeguez)
+Author: [David Moncayo](https://github.com/newbdavid)
