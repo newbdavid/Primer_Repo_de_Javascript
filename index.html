@@ -1,121 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <script>
         //alert('Hola');
-        var texto="Soy un bonito texto";
+        var texto = "Soy un bonito texto";
         var textoNumero = "2";
         console.log(textoNumero);
-        
-//        textoNumero=2;
-//        console.log(textoNumero);
-//        var numero=5;
-//        var float = 1.255;
-//        var booleanTrue = true;
-//        var booleanFalse = false        ;
-//        var undef= undefined;
-//        var varnull = null;
-//        
-//        console.log('Hola desde consola');
-//        console.log(texto);
-//        console.log(numero);
-//        console.log(float);
-//        console.log(booleanTrue);
-//        console.log(booleanFalse);
-//        console.log(undef);
-//        console.log(varnull);
-        
-//        var arregloString = ["1",'2','3'];
-//        console.log(arregloString)
-//        var arregloNumeros = [1,2,3];
-//        console.log(arregloNumeros);
-//
-//        var arregloFloats = [1.2342,2.4234,3.098];
-//        console.log(arregloFloats)
-//
-//        var arregloBooleano = [true,false,true];
-//        
-//        var arregloTodo = ['Nombre',123,54.2,true,false,null,undefined,"apellido"];
-//        console.log(arregloTodo);
-        
+
+        //        textoNumero=2;
+        //        console.log(textoNumero);
+        //        var numero=5;
+        //        var float = 1.255;
+        //        var booleanTrue = true;
+        //        var booleanFalse = false        ;
+        //        var undef= undefined;
+        //        var varnull = null;
+        //        
+        //        console.log('Hola desde consola');
+        //        console.log(texto);
+        //        console.log(numero);
+        //        console.log(float);
+        //        console.log(booleanTrue);
+        //        console.log(booleanFalse);
+        //        console.log(undef);
+        //        console.log(varnull);
+
+        //        var arregloString = ["1",'2','3'];
+        //        console.log(arregloString)
+        //        var arregloNumeros = [1,2,3];
+        //        console.log(arregloNumeros);
+        //
+        //        var arregloFloats = [1.2342,2.4234,3.098];
+        //        console.log(arregloFloats)
+        //
+        //        var arregloBooleano = [true,false,true];
+        //        
+        //        var arregloTodo = ['Nombre',123,54.2,true,false,null,undefined,"apellido"];
+        //        console.log(arregloTodo);
+
         //Objetos
 
-//        var David = {
-//            'nombre': 'David',
-//            'Apellido': 'Moncayo',
-//            edad: 27,
-//            mascotas:['Pancho','Kaiser'],
-//            //un arreglo de objetos
-//            hermanos: [{
-//                nombre: 'Sebastian',
-//                Apellido: 'Moncayo'
-//        },
-//                       {
-//                nombre: 'George',
-//                Apellido: 'Moncayo'           
-//                       }],//Ahora una funcion
-//            getNombre: function() {
-//                return David.nombre;
-//            },
-//            getApellido: function() {
-//                return this.Apellido;
-//            },
-//            setApellido: function(nuevoApellido){
-//                this.Apellido=nuevoApellido;
-//            }
-//            
-//        }
-//        console.log(David);
-//        
-//        console.log("Acceder nombre");
-//        console.log(David.nombre);
-//        console.log("Acceder edad");
-//        console.log(David.edad);
-//        console.log("Acceder funcion nombre");
-//        console.log(David.getNombre());
-//        
-//        console.log("Acceder funcion codigo");
-//        console.log(David.getNombre);
-//        David.setApellido('Balseca');
-//        console.log(David.getApellido());
+        //        var David = {
+        //            'nombre': 'David',
+        //            'Apellido': 'Moncayo',
+        //            edad: 27,
+        //            mascotas:['Pancho','Kaiser'],
+        //            //un arreglo de objetos
+        //            hermanos: [{
+        //                nombre: 'Sebastian',
+        //                Apellido: 'Moncayo'
+        //        },
+        //                       {
+        //                nombre: 'George',
+        //                Apellido: 'Moncayo'           
+        //                       }],//Ahora una funcion
+        //            getNombre: function() {
+        //                return David.nombre;
+        //            },
+        //            getApellido: function() {
+        //                return this.Apellido;
+        //            },
+        //            setApellido: function(nuevoApellido){
+        //                this.Apellido=nuevoApellido;
+        //            }
+        //            
+        //        }
+        //        console.log(David);
+        //        
+        //        console.log("Acceder nombre");
+        //        console.log(David.nombre);
+        //        console.log("Acceder edad");
+        //        console.log(David.edad);
+        //        console.log("Acceder funcion nombre");
+        //        console.log(David.getNombre());
+        //        
+        //        console.log("Acceder funcion codigo");
+        //        console.log(David.getNombre);
+        //        David.setApellido('Balseca');
+        //        console.log(David.getApellido());
+
+        var count = 10
+        var arregloNumero = [];
+        //          var objetoVacio={};
+        while (count > 0) {
+            if (count % 2 == 0) {
+                console.log('El numero:' + count + ' es par');
+            } else {
+                console.log('El numero:' + count + ' es impar');
+            }
+            arregloNumero.push(count);
+            console.log(count);
+            count--;
+        }
+        arregloNumero.pop();
+        //          arregloNumero.splice(0,1);
+        arregloNumero.splice(9, 1, 11);
+        console.log('Se acabo')
+        console.log(arregloNumero);
+
+        var numSheep = 4
+        var monthNumber = 1;
+        var monthsToPrint = 12;
+
+        for (monthNumber = 1; monthNumber <= monthsToPrint; monthNumber++) {
+            numSheep *= 4;
+            console.log('There will be ' + numSheep + ' after ' + monthNumber + ' month(s)!');
+        }
+
+        var reverseCounter = 10;
+        for (reverseCounter; reverseCounter >= 1; reverseCounter--) {
+            console.log(reverseCounter);
+        }
+        numSheep = 4
+        monthNumber = 1;
+        monthsToPrint = 12;
+        while (monthNumber <= monthsToPrint) {
+            numSheep *= 4;
+            console.log('There will be ' + numSheep + ' after ' + monthNumber + ' month(s)!');
+            monthNumber++;
+        }
+
+        numSheep = 4
+        monthNumber = 1;
+        monthsToPrint = 12;
+
+        for (monthNumber = 1; monthNumber <= monthsToPrint; monthNumber++) {
+            numSheep *= 4;
+            if (numSheep > 10000) {
+                numSheep /= 2;
+                console.log('Removing ' + numSheep + ' sheep from the population');
+            }
+            console.log('There will be ' + numSheep + ' after ' + monthNumber + ' month(s)!');
+        }
+        numSheep = 4
+        monthNumber = 1;
+        monthsToPrint = 12;
+
+        for (monthNumber = 1; monthNumber <= monthsToPrint; monthNumber++) {
+            numSheep *= 4;
+            if (monthNumber % 4 == 0) {
+                console.log('Removing ' + (numSheep * 3 / 4) + ' sheep from the population hehe');
+                numSheep *= (1 / 4);
+            } else {
+                if (numSheep > 10000) {
+                    numSheep /= 2;
+                    console.log('Removing ' + numSheep + ' sheep from the population');
+                }
+                console.log('There will be ' + numSheep + ' after ' + monthNumber + ' month(s)!');
+            }
+        }
         
-          var count=10
-          var arregloNumero=[];
-//          var objetoVacio={};
-          while(count>0){
-              if(count%2==0){
-                  console.log('El numero:'+count+' es par');
-              }else{
-                  console.log('El numero:'+count+' es impar');
-              }
-              arregloNumero.push(count);
-              console.log(count);
-              count--;
-          }
-          arregloNumero.pop();
-//          arregloNumero.splice(0,1);
-          arregloNumero.splice(9,1,11);
-          console.log('Se acabo')
-          console.log(arregloNumero);
         
-          var numSheep = 4
-          var monthNumber = 1;
-          var monthsToPrint = 12;
+        var respuesta = prompt("Whats your age, amigo");
+        console.log(respuesta);
+        console.log(parseInt(respuesta));
         
-          for(monthNumber=1;monthNumber<=monthsToPrint;monthNumber++){
-              numSheep*=4;
-              console.log('There will be '+numSheep+' after '+monthNumber+' month(s)!');
-          }
-          
-          var reverseCounter=10;
-          for(reverseCounter;reverseCounter>=1;reverseCounter--){
-              console.log(reverseCounter);
-          }
+        function multiplicador(a,b,c){
+            return a*b*c;
+        }
+        console.log(multiplicador(8,5,4));
+        
+        function maxOf2(num1,num2){
+            if(num1>num2){
+                return num1;
+            }else{
+                return num2;
+            }
+        }
+        console.log(maxOf2(4,5));
+        
+        function mystery(x,y){
+            var a = 4*x*y;
+            var b = 3*y+5
+            var c = a+b
+            return c
+        }
+        
+        function mysteryR(x,y){
+            return (4*x*y)+(3*y+5);
+        }
+        
+        function feedPerRanger(currentPop,ParkRangers){
+            alert('Each Park Ranger should load '+ currentPop*2/ParkRangers+' lbs of feed today');
+        }
+        
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
