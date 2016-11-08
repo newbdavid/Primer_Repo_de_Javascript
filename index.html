@@ -42,45 +42,77 @@
         
         //Objetos
 
-        var David = {
-            'nombre': 'David',
-            'Apellido': 'Moncayo',
-            edad: 27,
-            mascotas:['Pancho','Kaiser'],
-            //un arreglo de objetos
-            hermanos: [{
-                nombre: 'Sebastian',
-                Apellido: 'Moncayo'
-        },
-                       {
-                nombre: 'George',
-                Apellido: 'Moncayo'           
-                       }],//Ahora una funcion
-            getNombre: function() {
-                return David.nombre;
-            },
-            getApellido: function() {
-                return this.Apellido;
-            },
-            setApellido: function(nuevoApellido){
-                this.Apellido=nuevoApellido;
-            }
-            
-        }
-        console.log(David);
+//        var David = {
+//            'nombre': 'David',
+//            'Apellido': 'Moncayo',
+//            edad: 27,
+//            mascotas:['Pancho','Kaiser'],
+//            //un arreglo de objetos
+//            hermanos: [{
+//                nombre: 'Sebastian',
+//                Apellido: 'Moncayo'
+//        },
+//                       {
+//                nombre: 'George',
+//                Apellido: 'Moncayo'           
+//                       }],//Ahora una funcion
+//            getNombre: function() {
+//                return David.nombre;
+//            },
+//            getApellido: function() {
+//                return this.Apellido;
+//            },
+//            setApellido: function(nuevoApellido){
+//                this.Apellido=nuevoApellido;
+//            }
+//            
+//        }
+//        console.log(David);
+//        
+//        console.log("Acceder nombre");
+//        console.log(David.nombre);
+//        console.log("Acceder edad");
+//        console.log(David.edad);
+//        console.log("Acceder funcion nombre");
+//        console.log(David.getNombre());
+//        
+//        console.log("Acceder funcion codigo");
+//        console.log(David.getNombre);
+//        David.setApellido('Balseca');
+//        console.log(David.getApellido());
         
-        console.log("Acceder nombre");
-        console.log(David.nombre);
-        console.log("Acceder edad");
-        console.log(David.edad);
-        console.log("Acceder funcion nombre");
-        console.log(David.getNombre());
+          var count=10
+          var arregloNumero=[];
+//          var objetoVacio={};
+          while(count>0){
+              if(count%2==0){
+                  console.log('El numero:'+count+' es par');
+              }else{
+                  console.log('El numero:'+count+' es impar');
+              }
+              arregloNumero.push(count);
+              console.log(count);
+              count--;
+          }
+          arregloNumero.pop();
+//          arregloNumero.splice(0,1);
+          arregloNumero.splice(9,1,11);
+          console.log('Se acabo')
+          console.log(arregloNumero);
         
-        console.log("Acceder funcion codigo");
-        console.log(David.getNombre);
-        David.setApellido('Balseca');
-        console.log(David.getApellido());
+          var numSheep = 4
+          var monthNumber = 1;
+          var monthsToPrint = 12;
         
+          for(monthNumber=1;monthNumber<=monthsToPrint;monthNumber++){
+              numSheep*=4;
+              console.log('There will be '+numSheep+' after '+monthNumber+' month(s)!');
+          }
+          
+          var reverseCounter=10;
+          for(reverseCounter;reverseCounter>=1;reverseCounter--){
+              console.log(reverseCounter);
+          }
     </script>
 </head>
 <body>
