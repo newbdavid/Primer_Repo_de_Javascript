@@ -252,6 +252,17 @@
                        function(input){ return (input*input)-9;},
                        function(input){ return input%4;},]
         
+        var start=2;
+        var applyAndEmpty = function(input,queueFunction){
+            for(var i=0;i<queueFunction.length;i++){
+                input=queueFunction[i](input);
+            }
+            return input;
+            
+        }
+        
+        console.log(applyAndEmpty(start,pu))
+        
     </script>
 </head>
 
