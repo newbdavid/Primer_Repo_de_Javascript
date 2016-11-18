@@ -18,7 +18,7 @@
   * <a href="#html">HTML</a>
   * <a href="#estilosCSS">Estilos CSS</a>
   * <a href="#bootstrap">Bootstrap</a>
-  * <a href="#npm">Node Package Manager</a>
+  * <a href="#emmet">Emmet</a>
   * <a href="#xml">XML</a>
 - <a href="#desarrollo">Desarrollo de la Práctica</a>
   * <a href="#postman">Postman</a>
@@ -63,19 +63,20 @@ El CSS es utilizado para dar estilo a un documento html por medio de nombrar la 
 
 <a name="bootstrap"></a>
 ### Bootstrap
-El Inspector de un navegador sirve para examinar la estructura y diseño de una página. Tambien se pueden hacer modificaciones en tiempo real de ambos aspectos.
+Es el framework mas porpular de HTML, CSS y JS para proyectos web responsive y primero-dispositivos-móviles.
+Bootstrap hace el desarrolo web de front-end más rápido y fácil. Esta hecho para gente de todos los niveles de habilidad, dispositivos de todas las formas y proyectos de todos los tamaños
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/InspectorInception.png?raw=true" >
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/02EstilosCSS/Graficos/Bootstrap-3.jpg?raw=true" >
 </p>
 <br>
 <a href="#cabecera">A la cabecera</a>
 
-<a name="npm"></a>
-### Node Package Manager
+<a name="emmet"></a>
+### Emmet
 El Administrador de Paquetes de Node da la facilidad a los desarrolladores para compartir el codigo que ellos han creado para solucionar problemas particulares y dar este código a otros desarrolladores para reusarlo en sus propias aplicaciones.
-Una vez que se usa código de otros desarrolladores el NPM hace que recibir actualizaciones del mismo sea muy facil.
+Una vez que se usa código de otros desarrolladores el emmet hace que recibir actualizaciones del mismo sea muy facil.
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/npm.jpg?raw=true" >
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/emmet.jpg?raw=true" >
 </p>
 <br>
 <a href="#cabecera">A la cabecera</a>
