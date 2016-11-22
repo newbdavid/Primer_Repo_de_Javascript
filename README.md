@@ -73,8 +73,7 @@ Bootstrap hace el desarrolo web de front-end más rápido y fácil. Esta hecho p
 
 <a name="emmet"></a>
 ### Emmet
-El Administrador de Paquetes de Node da la facilidad a los desarrolladores para compartir el codigo que ellos han creado para solucionar problemas particulares y dar este código a otros desarrolladores para reusarlo en sus propias aplicaciones.
-Una vez que se usa código de otros desarrolladores el emmet hace que recibir actualizaciones del mismo sea muy facil.
+Emmet es un plugin para varios populares editores de texto, este mejora de gran manera el workflow de codificar HTML y CSS
 <p align="center">
 <img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/emmet.jpg?raw=true" >
 </p>
