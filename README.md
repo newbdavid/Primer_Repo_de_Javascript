@@ -72,10 +72,10 @@ Bootstrap hace el desarrolo web de front-end más rápido y fácil. Esta hecho p
 ### Emmet
 Emmet es un plugin para varios populares editores de texto, este mejora de gran manera el workflow de codificar HTML y CSS
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/emmetplugin.jpg?raw=true" >
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/02EstilosCSS/Graficos/emmetplugin.jpg?raw=true" >
 </p>
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/Emmet.pn+g?raw=true" >
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/02EstilosCSS/Graficos/Emmet.png?raw=true" >
 </p>
 <br>
 <a href="#cabecera">A la cabecera</a>
