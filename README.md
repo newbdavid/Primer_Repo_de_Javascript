@@ -101,7 +101,16 @@ Se pueden definir CSS dentro del archivo html, usando las tags `<style></style>`
 <a name="12columnas"></a>
 ### 12 Columnas
 Cuando usamos Bootstrap podemos ver que podemos usar su formato de 12 columnas para hacer elementos de ancho personalizado en cuanto ocupa en la pantalla.
-Se puede
+Se puede ver un ejemplo de 3 elementos que ocupan 4 columnas de la siguiente manera:
+`<div class="col-md-4 borde">
+                <h2>Columna md 4 - 1</h2>
+            </div>
+            <div class="col-md-4 borde">
+                <h2>Columna md 4 - 2</h2>
+            </div>
+            <div class="col-md-4 borde">
+                <h2>Columna md 4 - 3</h2>
+</div>`
 
 
 <br>
@@ -110,10 +119,9 @@ Se puede
 <a name="conrec"></a>
 ## Conclusiones y Recomendaciones
 
-- El uso de inlinecss te ayuda a ver que esta trayendo la pagina en sus llamadas y como optimizar el contenido transferido.
+- El uso de la etiqueta `<style>` y de usar inline css ya no es muy recomendado porque es dificil de mantener, es por eso que es mejor utilizar las hojas de estilo
 - Se recomienda usar el ir a cabecera despues de terminar una seccion
-- Se recomienda el uso de MarkDown Cheat Sheet para tener listo el contenido se puede ver [aqui](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-- Se recomienda usar el inspector para jugar con la pagina y aprender mas sobre el uso de HTML y CSS
+- El uso de bootstrap hace más facil el realizar págines web que tengan un disño responsivo
 
 <br>
 <a href="#cabecera">A la cabecera</a>
