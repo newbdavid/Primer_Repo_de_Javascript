@@ -51,15 +51,40 @@ app.get('/Usuario', function (req, res) {
     res.json(usuarios);
     
 })
-
-app.get('/Usuario/:idUsuario',function (req,res){
+//accedemos de la siguiente manera
+//http://localhost:5050/Usuario/1
+app.get('/Usuario/:idUsuario', function (req,res){
     
     var idActual = req.params.idUsuario;
-    for (var i=0;usuarios.length;i++){
-        if(idActual == usuarios[i].id)
-            res.json(usuarios[i]);
+for (var i = 0; usuarios.length; i++) {
+    if (idActual == usuarios[i].id) {
+        res.json(usuarios[i]);
     }
-    res.send('I dont know such family ')
+}
+res.send('I dont know such family ')
+})
+
+app.post('/Usuario', function (req, res) {
+    console.log(req.query.nombre);
+    console.log(req.query.cedula);
+    
+    if(!req.query.nombre){
+        res.send('No envio el nombre');
+    }
+    
+    if(!req.query.cedula){
+        res.send('No envio el cedula');
+    }
+    
+    var nuevoUsuario = {
+        id:usuarios.length+1,
+        nombre:req.query.nombre,
+        cedula:req.query.cedula
+    }
+    usuarios.push(nuevoUsuario)
+    
+    res.json(nuevoUsuario);
+    
 })
 
 app.listen(5050, function () {
