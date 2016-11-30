@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<script>
+  
+  function impresionEdadPar(edad){
+    if(edad%2==0){
+      alert("Su edad es "+edad+", es un numero par y su cuadrado es "+(edad*edad))
+    }
+    else{
+      var finFor=", Fin del lazo For";
+      for(var i = 1; i <=edad;i++){
+        if(i < edad){
+          console.log("El numero "+i+" es impar mediante un for");
+        }
+        if(i == edad){
+          console.log("El numero "+i+" es impar mediante un for"+finFor);
+        }
+      }
+      var j=1;
+      var finWhile=", Fin del lazo While";
+      while(j<=edad){
+        if(j < edad){
+          console.log("El numero "+j+" es impar mediante un while");
+        }
+        if(j == edad){
+          console.log("El numero "+j+" es impar mediante un while"+finWhile);
+        }
+        j++;
+      }
+    }
+  }
+  var edadPrompt = prompt()
+  console.log(edadPrompt)
+  var edadT = Number(edadPrompt)
+  console.log(edadT)
+  
+  impresionEdadPar(edadT);
+  
+  </script>
+</body>
+</html>
