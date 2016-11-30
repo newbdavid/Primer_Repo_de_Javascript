@@ -11,14 +11,17 @@ app.post('/TecnologiasWeb', function (req, res) {
         "cedula":"1720825346"
     }
     
-    /*console.log(res) ;  
+    console.log(res) ;  
     console.log("Response Headers");
     console.log(res.HEADERS_RECEIVED);
     console.log("Request Headers");
     console.log(req.head);
-    */
+    
     usuario.apellido= 'Moncayo';
     usuario.mascotas= [];
+    
+    //anadimos a las cabeceras de respuesta un tokenPostman
+    res.append("token",1234);
     res.json(usuario);
   
   
