@@ -1,5 +1,21 @@
 var express = require('express')
 var app = express()
+var fs = require('fs');
+
+
+var quePasa = '';
+quePasa='esta por leer el archivo';
+console.log(quePasa)
+//funcion(path,codification,function)
+
+
+quePasa='Termino de leer el archivo';
+console.log(quePasa);
+//paginas/pagina.html --> busca en C:/paginas/pagina html
+
+//.paginas/pagina.html
+//>path/paginas/pagina.html
+
 var usuarios = [
         {
             id:1,
@@ -18,7 +34,26 @@ var usuarios = [
         },
     ];
 app.get('/TecnologiasWeb', function (req, res) {
-  res.send('con javascript')
+    var archivoLeido;
+    console.log('1 Antes de leer');
+    fs.readFile('./paginas/pagina.html','utf8',
+           function(error,archivoLeido){
+            console.log('3'+error);
+            console.log('4'+archivoLeido);
+            res.send(archivoLeido);
+    
+        });//funcion al final sera un callback
+    
+    console.log('1 Antes de leer');
+    fs.readFile('./paginas/usuario.html','utf8',
+           function(error,archivoLeido1){
+            console.log('3'+error);
+            console.log('4'+archivoLeido1);
+            res.send(archivoLeido+archivoLeido1);
+    
+        });
+    console.log('1,parece que termino de leer');
+  
 })
 
 app.post('/TecnologiasWeb', function (req, res) {
