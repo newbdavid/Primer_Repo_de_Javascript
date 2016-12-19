@@ -34,24 +34,25 @@ var usuarios = [
         },
     ];
 app.get('/TecnologiasWeb', function (req, res) {
-    var archivoLeido;
+    var todo;
     console.log('1 Antes de leer');
     fs.readFile('./paginas/pagina.html','utf8',
            function(error,archivoLeido){
             console.log('3'+error);
             console.log('4'+archivoLeido);
-            res.send(archivoLeido);
-    
-        });//funcion al final sera un callback
-    
-    console.log('1 Antes de leer');
-    fs.readFile('./paginas/usuario.html','utf8',
+            fs.readFile('./paginas/usuario.html','utf8',
            function(error,archivoLeido1){
             console.log('3'+error);
             console.log('4'+archivoLeido1);
             res.send(archivoLeido+archivoLeido1);
     
-        });
+        });    
+        res.send(archivoLeido);
+    
+        });//funcion al final sera un callback
+    
+    console.log('1 Antes de leer');
+    
     console.log('1,parece que termino de leer');
   
 })
