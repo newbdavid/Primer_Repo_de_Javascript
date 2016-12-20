@@ -7,3 +7,15 @@ h1:hover{
 .borde{
     border: black 2 px
 }
+th{
+    background-color: bisque;
+    color:blue
+    
+}
+tr:nth-child(even){
+    background-color: aqua
+}
+
+tr:nth-child(odd){
+    background-color: aquamarine
+}
