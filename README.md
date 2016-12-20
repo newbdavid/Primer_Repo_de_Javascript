@@ -33,6 +33,17 @@ El servidor web de sails esta en la carpeta assets, esto es publico para cualqui
 
 Podemos ver que sails viene con un servidor http definido
 
+## APrendimos los Assests
+
+
+## Rutas
+Estas estan en config routes
+
+
+
+## Generar Controladores Sailsjs
+Para generar controladores se utiliza el siguiente comando:
+>sails generate controller NombreControlador
 
 
 # Introducción a la Web
