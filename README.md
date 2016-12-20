@@ -1,3 +1,40 @@
+## COmandos Importantes
+
+### Instalar sailsjs
+
+´´´
+
+:>npm install -g sails
+
+### Crear un proyecto en sailsjs
+sails new StarWars
+
+
+### Levantar el servidor
+
+````
+sails lift
+````
+Esto dentro de la carpeta
+
+````
+sails lift 
+````
+
+
+El sails les pide opciones si no estan definidas,  las opciones son:
+-1 SAFE MODE no se va a alterar la base de datis
+-2 ALTER MODE se va a alterar la base datos si nosotros hicimos cambios en os modelos por ejemplo 
+-3 DELETE MODE borra todos los datos de la base hy vuelve a crear los modelos
+
+## Servidor Web de Sailsjs
+El servidor web de sails esta en la carpeta assets, esto es publico para cualquiera
+
+
+Podemos ver que sails viene con un servidor http definido
+
+
+
 # Introducción a la Web
 
 ### Materia : `Tecnologías Web con JavaScript`
