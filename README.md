@@ -45,6 +45,32 @@ Estas estan en config routes
 Para generar controladores se utiliza el siguiente comando:
 >sails generate controller NombreControlador
 
+##Generar Modelos Sailsjs
+
+
+## Generar APIs en Sailsjs
+``
+> salils generate api NombreAPI
+``
+Api es la fusion de un controlador y un modelo
+
+##API REST
+
+Crear URL:
+`http://localhost:1337/`
+
+Metodo HTTP
+
+'POST'
+
+Datos:
+```javascript
+{
+    nombre:'Adrian',
+    apellido:'Eguez',
+}
+```
+
 
 # Introducción a la Web
 
