@@ -23,7 +23,7 @@
     * <a href="#firstApp">Primera Aplicación</a>
     * <a href="#imports">Imports</a>
     * <a href="#exports">Exports</a>
-  * <<a href="#httpserver">Servidor Http</a>
+  * <a href="#httpserver">Servidor Http</a>
 - <a href="#conrec">Conclusiones y Recomendaciones</a> 
 
 <a name="tema"></a>
@@ -63,7 +63,7 @@ Una vez que se usa código de otros desarrolladores el NPM hace que recibir actu
 ### Callback Hell
 JavaScript asíncrono utiliza callbacks, es dificil entenderlo de manera intuitiva. Y mucho código termina pareciendose a este
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/instalacionNodeJsBIG.png?raw=true" width="1280" height="720">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/callbackHell.PNG?raw=true" >
 </p>
 <a name="desarrollo"></a>
 ## Desarrollo del informe
@@ -94,7 +94,7 @@ En nuestro caso vamos a crear una aplicacion que sume dos numeros y lo vamos a i
 #### Primera Aplicación
 Nuestra primera aplicacion consiste en una calculadora muy básica que toma dos numeros y los suma de la siguiente manera:
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/2016-12-29-2-.png?raw=true" width="1280" height="720">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/2016-12-29-2-.png?raw=true" >
 </p>
 <br>
 <a name="imports"></a>
@@ -118,17 +118,17 @@ Para exportar exportamos un objeto con la funcion que construimos
 ### Http Server
 Ahora vamos a crear un servidor HTTP utilizando `express`. Lo vamos a guardar en una variable llamada `app` dentro de nuestra aplicación `index.js`
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/2016-12-30%20(2).png?raw=true" width="1280" height="720">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/2016-12-30%20(2).png?raw=true">
 </p>
 
 Tambien vamos a crear usuarios de tal manera que puedan ser accedidos en la URL
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/Usuarios.PNG?raw=true" width="1280" height="720">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/Usuarios.PNG?raw=true">
 </p>
 
 Con la función de GET lograremos que nos liste el usuario cuyo id sea el especificado en los parámetros
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/2016-12-30%20(3).png?raw=true" width="1280" height="720">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/2016-12-30%20(3).png?raw=true" >
 </p>
 
 Con la funcion POST se crean validaciones para meter un nuevo usuario, en el req se pone el `Nombre` y `Cédula` y si no se ha proporcionado algún dato se avisa al usuario, cuando todos los datos son correctos se pone en el arreglo el usuario registrado.
