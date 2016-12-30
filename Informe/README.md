@@ -61,7 +61,10 @@ Una vez que se usa código de otros desarrolladores el NPM hace que recibir actu
 
 <a name="callbackhell"></a>
 ### Callback Hell
-
+JavaScript asíncrono utiliza callbacks, es dificil entenderlo de manera intuitiva. Y mucho código termina pareciendose a este
+<p align="center">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/instalacionNodeJsBIG.png?raw=true" width="1280" height="720">
+</p>
 <a name="desarrollo"></a>
 ## Desarrollo del informe
 Aqui se incluiran capturas de pantalla de lo visto en esta clase
@@ -71,13 +74,13 @@ Aqui se incluiran capturas de pantalla de lo visto en esta clase
 Descargaremos la version 6.9.2 para windows 
 
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/instalacionNodeJsBIG.png?raw=true" width="1280" height="720">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/Captura%20de%20pantalla%202016-12-28%2021.04.18.png?raw=true" width="1280" height="720">
 </p>
 
 Hacemos una instalación por defecto, en mi caso voy a instalar en el disco E: Node por razones de espacio
 
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/LetsPostThisThing.png?raw=true" width="1280" height="720">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/Captura%20de%20pantalla%202016-12-28%2021.05.57.png?raw=true" width="1280" height="720">
 </p>
 
 <br>
@@ -91,14 +94,14 @@ En nuestro caso vamos a crear una aplicacion que sume dos numeros y lo vamos a i
 #### Primera Aplicación
 Nuestra primera aplicacion consiste en una calculadora muy básica que toma dos numeros y los suma de la siguiente manera:
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/LetsPostThisThing.png?raw=true" width="1280" height="720">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/2016-12-29-2-.png?raw=true" width="1280" height="720">
 </p>
 <br>
 <a name="imports"></a>
 #### Imports
 Para importar utilizamos `require` para utilizar un paquete que hayamos instalado desde npm de la siguiente manera: `var calculadora = require("tecnologiaswebmdavid")`
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/LetsPostThisThing.png?raw=true" width="1280" height="720">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/2016-12-29-4.png?raw=true" width="1280" height="720">
 </p>
 
 <br>
@@ -106,7 +109,7 @@ Para importar utilizamos `require` para utilizar un paquete que hayamos instalad
 #### Exports
 Para exportar exportamos un objeto con la funcion que construimos
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/LetsPostThisThing.png?raw=true" width="1280" height="720">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/2016-12-29-3.png?raw=true" width="1280" height="720">
 </p>
 
 <br>
@@ -115,22 +118,22 @@ Para exportar exportamos un objeto con la funcion que construimos
 ### Http Server
 Ahora vamos a crear un servidor HTTP utilizando `express`. Lo vamos a guardar en una variable llamada `app` dentro de nuestra aplicación `index.js`
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/LetsPostThisThing.png?raw=true" width="1280" height="720">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/2016-12-30%20(2).png?raw=true" width="1280" height="720">
 </p>
 
 Tambien vamos a crear usuarios de tal manera que puedan ser accedidos en la URL
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/LetsPostThisThing.png?raw=true" width="1280" height="720">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/Usuarios.PNG?raw=true" width="1280" height="720">
 </p>
 
 Con la función de GET lograremos que nos liste el usuario cuyo id sea el especificado en los parámetros
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/LetsPostThisThing.png?raw=true" width="1280" height="720">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/2016-12-30%20(3).png?raw=true" width="1280" height="720">
 </p>
 
 Con la funcion POST se crean validaciones para meter un nuevo usuario, en el req se pone el `Nombre` y `Cédula` y si no se ha proporcionado algún dato se avisa al usuario, cuando todos los datos son correctos se pone en el arreglo el usuario registrado.
 <p align="center">
-<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/01-html-withInforme/Imagenes/LetsPostThisThing.png?raw=true" width="1280" height="720">
+<img src="https://github.com/newbdavid/Primer_Repo_de_Javascript/blob/09-NodeJs04/Informe/imagenes/2016-12-30%20(4).png?raw=true" width="1280" height="720">
 </p>
 
 
