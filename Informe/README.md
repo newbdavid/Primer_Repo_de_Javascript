@@ -143,7 +143,7 @@ Con la funcion POST se crean validaciones para meter un nuevo usuario, en el req
 - Node.js es una manera rápida de construir todo tipo de software, sobre todo web para usar cosas que ya están desarrolladas y usarlas a tu favor.
 - Se deben subir aplicaciones funcionales y útiles que sirvan a la comunidad que descarga los paquetes bajo npm para construir una web participativa en el que el trabajo de otros pueda ser recompensado y utilizado.
 - Se recomienda el estudio de los headers y como funcionan los métodos HTTP como GET, POST, DELETE, etc. para estar más familiarizado con ellos y poder implementarlos de manera fácil en Javascript
-- 
+
 
 <br>
 <a href="#cabecera">A la cabecera</a>
