@@ -49,12 +49,12 @@ Para generar controladores se utiliza el siguiente comando:
 
 
 ## Generar APIs en Sailsjs
-``
+`
 > salils generate api NombreAPI
-``
+`
 Api es la fusion de un controlador y un modelo
 
-##API REST
+## API REST
 
 Crear URL:
 `http://localhost:1337/`
@@ -71,6 +71,18 @@ Datos:
 }
 ```
 
+
+### Con shorcuts
+
+http://localhost:1337/Usuario/update/1?nombres=Enrique&apellidos=Moncayo
+
+  http://localhost:1337/Usuario/create?nombres=Jorge&apellidos=Moncayo
+  http://localhost:1337/Usuario/destroy/1
+  
+  Cuando deshabilitas shorctus de crear en la url mismo Usuarios o cosas asi
+  Tambien puede ponerle como limite
+  
+  Vamos a aprender como crear, 
 
 # Introducción a la Web
 
