@@ -10,71 +10,133 @@
 module.exports = {
 
     crearUsuario: function (req, res) {
-        //   Se accede asi: /Usuario/crearUsuario
 
-        // Guardando todos los parametros en la variable parametros
+        if (req.method == "POST") {
 
-        var parametros = req.allParams();
-        console.log(parametros);
+            var parametros = req.allParams();
 
-        if (req.method == 'POST') {
             if (parametros.nombres && parametros.apellidos) {
-                //creo el usuario
-                Usuario.create({
+
+                var usuarioCrear = {
                     nombres: parametros.nombres,
                     apellidos: parametros.apellidos,
                     correo: parametros.correo
-                }).exec(function (error, usuarioCreado) {
-                    if (error) return res.serverError()
-                    sails.log.info(usuarioCreado);
-                    return res.ok(usuarioCreado);
-                });
+                }
+
+                if (usuarioCrear.correo == "") {
+                    delete usuarioCrear.correo
+                }
+
+                Usuario.create(usuarioCrear).exec(function (err, usuarioCreado) {
+
+                    if (err) {
+                        return res.view('vistas/Error', {
+                            error: {
+                                desripcion: "Fallo al crear el Usuario",
+                                rawError: err,
+                                url: "/CrearUsuario"
+                            }
+
+                        });
+                    }
+
+                    Usuario.find()
+                        .exec(function (errorIndefinido, usuariosEncontrados) {
+
+                            if (errorIndefinido) {
+                                res.view('vistas/Error', {
+                                    error: {
+                                        desripcion: "Hubo un problema cargando los Usuarios",
+                                        rawError: errorIndefinido,
+                                        url: "/ListarUsuarios"
+                                    }
+                                });
+                            }
+
+                            res.view('vistas/Usuario/ListarUsuarios', {
+                                usuarios: usuariosEncontrados
+                            });
+                        })
+
+                })
+
+
             } else {
-                // bad Request
-                return res.badRequest('No envia todos los parametros');
+
+                return res.view('vistas/Error', {
+                    error: {
+                        desripcion: "Llena todos los parametros, apellidos y nombres",
+                        rawError: "Fallo en envio de parametros",
+                        url: "/CrearUsuario"
+                    }
+
+                });
+
             }
+
+
         } else {
-            return res.badRequest('Metodo invalido');
+
+            return res.view('vistas/Error', {
+                error: {
+                    desripcion: "Error en el uso del Metodo HTTP",
+                    rawError: "HTTP Invalido",
+                    url: "/CrearUsuario"
+                }
+            });
+
         }
 
     },
-    crearUsuarioForm: function (req, res) {
+    BorrarUsuario: function (req, res) {
 
         var parametros = req.allParams();
-        console.log(parametros);
 
-        if (req.method == 'POST') {
-            if (parametros.nombres && parametros.apellidos) {
-                //creo el usuario
-                Usuario.create({
-                    nombres: parametros.nombres,
-                    apellidos: parametros.apellidos,
-                    correo: parametros.correo
-                }).exec(function (error, usuarioCreado) {
-                    if (error) return res.serverError()
-                    sails.log.info(usuarioCreado);
+        if (parametros.id) {
 
-                    return res.view('vistas/home', {
-                        titulo: 'Inicio',
-                        numero: 1,
-                        mauricio: {
-                            nombre: 'Mauricio',
-                            cedula: 1718137159
+            Usuario.destroy({
+                id: parametros.id
+            }).exec(function (errorInesperado, UsuarioRemovido) {
+                if (errorInesperado) {
+                    return res.view('vistas/Error', {
+                        error: {
+                            desripcion: "Tuvimos un Error Inesperado",
+                            rawError: errorInesperado,
+                            url: "/ListarUsuarios"
                         }
                     });
-                });
+                }
+                Usuario.find()
+                    .exec(function (errorIndefinido, usuariosEncontrados) {
 
+                        if (errorIndefinido) {
+                            res.view('vistas/Error', {
+                                error: {
+                                    desripcion: "Hubo un problema cargando los Usuarios",
+                                    rawError: errorIndefinido,
+                                    url: "/ListarUsuarios"
+                                }
+                            });
+                        }
 
+                        res.view('vistas/Usuario/ListarUsuarios', {
+                            usuarios: usuariosEncontrados
+                        });
+                    })
+            })
 
-
-            } else {
-                // bad Request
-                return res.badRequest('No envia todos los parametros');
-            }
         } else {
-            return res.badRequest('Metodo invalido');
+            return res.view('vistas/Error', {
+                error: {
+                    desripcion: "Necesitamos el ID para borrar al Usuario",
+                    rawError: "No envia ID",
+                    url: "/ListarUsuarios"
+                }
+            });
         }
-
     }
+
+
+
 
 };
