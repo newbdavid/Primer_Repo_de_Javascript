@@ -1,4 +1,7 @@
 import {Component, OnInit} from "@angular/core";
+import {Http} from "@angular/http";
+import {MasterURlService} from "./services/master-url.service";
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -46,7 +49,9 @@ export class AppComponent implements OnInit{
   nombre:string="";
   apellido:string="";
 
-  constructor(){
+  error:string ="no hay errores";
+
+  constructor(private http: Http){//es el tipo de clase http
     this.apellido="Moncayo"
     this.nombre="David"
   }
@@ -68,9 +73,48 @@ export class AppComponent implements OnInit{
     console.log("Hizo Focus")
   }
 
-  crearTienda(formulario){
+  nuevaTienda:any={};
+
+  crearTienda(formulario) {
     console.log(formulario);
-  }
+
+    this._http.post(this._masterURL.url+"Tienda", {
+      nombre:formulario.value.nombre
+    }).subscribe(
+      (res)=>{
+        console.log("No hubo Errores");
+        console.log(res);
+        this.nuevaTienda = {}
+      },
+      (err)=>{
+        console.log("Ocurrio un error",err);
+      },
+      ()=>{
+        console.log("Termino la función vamos a las casas")
+      }
+    );
+
+
+
+
+
+
+  /*crearTienda(formulario){
+    console.log(formulario);
+    this.http
+      .post("http://localhost:1337/Tienda", formulario.valores)
+      .subscribe(
+        (res)=>{
+          console.log('Respuesta: ',res);
+          this.nuevaTienda={};
+        },
+        err=>console.log('Error: ',err),
+        ()=>{
+          console.log("Se completo la accion")
+        }
+
+      );
+  }*/
 
   title = 'app works!';
 }

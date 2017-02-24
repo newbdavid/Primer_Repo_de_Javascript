@@ -1,6 +1,7 @@
 <h1>
   {{title}}
 </h1>
+<h2>{{error}}</h2>
 
 <p>
   {{nombre}} - {{apellido}}
@@ -15,8 +16,23 @@
 <input type="text" [placeholder]="nombreCompleto()" (focus)="hizoFocus()">
 
 <div class="container">
-  <form (ngSubmit)>
-
+  <div class="col-sm-12">
+    <pre>{{nuevaTienda.nombre|json}}</pre>
+  </div>
+  <form (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
+    <div class="form-group">
+      <label>Tienda</label>
+      <input type="text"
+             class="form-control"
+             placeholder="Digite un nombre de tienda como: Adidas"
+             name="nombre"
+             [(ngModel)]="nuevaTienda.nombre">
+    </div>
+    <button type="submit" class="btn btn-block btn-success">Crear</button>
   </form>
+
+</div>
+<div >
+  <h1>{{nuevaTienda.nombre}}</h1>
 </div>
 
