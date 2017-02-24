@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+//Decorador, se utiliza para implementar una funcionalidad
 @NgModule({
   declarations: [
     AppComponent

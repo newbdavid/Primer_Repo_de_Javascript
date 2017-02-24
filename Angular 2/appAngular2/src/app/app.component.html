@@ -1,3 +1,22 @@
 <h1>
   {{title}}
 </h1>
+
+<p>
+  {{nombre}} - {{apellido}}
+</p>
+
+<p>
+  {{nombreCompleto()}}
+</p>
+
+<h3 [innerHTML]="nombreCompleto()" (click)="hizoClick()" [style.backgroundColor] ></h3>
+
+<input type="text" [placeholder]="nombreCompleto()" (focus)="hizoFocus()">
+
+<div class="container">
+  <form (ngSubmit)>
+
+  </form>
+</div>
+
