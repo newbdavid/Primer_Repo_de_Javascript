@@ -13,13 +13,17 @@
 
 <h3 [innerHTML]="nombreCompleto()" (click)="hizoClick()" [style.backgroundColor] ></h3>
 
+<div class="animated slideInUp" [hidden]="!nombre.errors">
+  <span class="bg-primary" *ngIf=""nombre.errors &&(nombre.dirty||nombre.touched)>"Ingrese un nombre minimo de 4"</span>
+</div>
+
 <input type="text" [placeholder]="nombreCompleto()" (focus)="hizoFocus()">
 
 <div class="container">
   <div class="col-sm-12">
     <pre>{{nuevaTienda.nombre|json}}</pre>
   </div>
-  <form (ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
+  <form class="animated bounceIn"(ngSubmit)="crearTienda(NuevaTiendaForm)" #NuevaTiendaForm="ngForm">
     <div class="form-group">
       <label>Tienda</label>
       <input type="text"
