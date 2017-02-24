@@ -11,47 +11,55 @@ import {Form, NgForm} from "@angular/forms";
 // CTRL A +  -  CTRL + ALT + L
 export class AppComponent implements OnInit {
   title: string = "Bienvenido a Ingresar Tiendas";
-  nuevaTienda= {};
+  nuevaTienda = {};
   tiendas = [];
   disabledButtons = {
-    NuevaTiendaFormSubmitButton:false
+    NuevaTiendaFormSubmitButton: false
   };
+
   constructor(private _http: Http,
               private _masterURL: MasterURlService) {
   }
+
   ngOnInit() {
-    this._http.get(this._masterURL.url+"Tienda")
+    this._http.get(this._masterURL.url + "Tienda")
       .subscribe(
-        (res:Response)=>{
-          this.tiendas = res.json();
+        (res: Response) => {
+          this.tiendas = res.json()
+            .map((value) => {
+              value.formularioCerrado = true;// cada parte que tiene se le agrega si el formulario esta cerrado
+
+              return value;
+            });
         },
-        (err)=>{
+        (err) => {
           console.log(err);
         }
       )
   }
-  crearTienda(formulario:NgForm) {
+
+  crearTienda(formulario: NgForm) {
     console.log(formulario);
     this.disabledButtons.NuevaTiendaFormSubmitButton = true;
-    this._http.post(this._masterURL.url+"Tienda", {
-      nombre:formulario.value.nombre
+    this._http.post(this._masterURL.url + "Tienda", {
+      nombre: formulario.value.nombre
     }).subscribe(
-      (res)=>{
+      (res) => {
         console.log("No hubo Errores");
         console.log(res);
-        this.tiendas.push()
+        this.tiendas.push(res.json())
+
         this.nuevaTienda = {};
         this.disabledButtons.NuevaTiendaFormSubmitButton = false;
       },
-      (err)=>{
+      (err) => {
         this.disabledButtons.NuevaTiendaFormSubmitButton = false;
-        console.log("Ocurrio un err or",err);
+        console.log("Ocurrio un err or", err);
       },
-      ()=>{
+      () => {
         console.log("Termino la función vamos a las casas")
       }
     );
-
 
 
     //
@@ -65,30 +73,30 @@ export class AppComponent implements OnInit {
     // );
   }
 
-  borrarTienda(id:number){
+  borrarTienda(id: number) {
     let parametros = {
-      id:id
+      id: id
     }
-    this._http.delete(this._masterURL.url+"Tienda/"+parametros.id)
+    this._http.delete(this._masterURL.url + "Tienda/" + parametros.id)
       .subscribe(
-        (res)=>{
+        (res) => {
           let tiendaBorrada = res.json();
-          this.tiendas = this.tiendas.filter(value=>tiendaBorrada.id!=value.id);
+          this.tiendas = this.tiendas.filter(value => tiendaBorrada.id != value.id);
         }
       )
   }
 
-  actualizarTienda(tienda:any){
+  actualizarTienda(tienda: any) {
     let parametros = {
-      nombre:tienda.nombre
+      nombre: tienda.nombre
     }
-    this._http.put(this._masterURL.url+"Tienda/"+tienda.id,parametros)
+    this._http.put(this._masterURL.url + "Tienda/" + tienda.id, parametros)
       .subscribe(
-        (res:Response)=>{
-          console.log("Respuesta:",res.json());
+        (res: Response) => {
+          console.log("Respuesta:", res.json());
         },
-        (err)=>{
-          console.log("Error",err);
+        (err) => {
+          console.log("Error", err);
         }
       )
   }
