@@ -40,3 +40,8 @@
   <h1>{{nuevaTienda.nombre}}</h1>
 </div>
 
+
+<div class="col-sm-3" *ngFor="let tienda of tiendas">
+  <h3>{{tienda.nombre}}</h3>
+  <p>ID: {{tienda.id}}</p>
+</div>

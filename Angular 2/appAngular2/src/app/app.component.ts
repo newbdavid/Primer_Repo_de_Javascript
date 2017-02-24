@@ -50,6 +50,7 @@ export class AppComponent implements OnInit{
   apellido:string="";
 
   error:string ="no hay errores";
+  tiendas = [];
 
   constructor(private http: Http){//es el tipo de clase http
     this.apellido="Moncayo"
@@ -59,6 +60,16 @@ export class AppComponent implements OnInit{
     console.log("On Init")
     this.apellido="Balseca"
     this.nombre="Enrique"
+    this.http.get("http://localhost:1337/" + "Tienda")
+      .subscribe(
+        (res)=>{
+          this.tiendas=res.json();
+        },
+        (err)=>{
+          console.log(err);
+        }
+      )
+
   }
 
   nombreCompleto():string{
