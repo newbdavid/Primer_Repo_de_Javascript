@@ -6,7 +6,11 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {MasterURlService} from "./services/master-url.service";
 
-//Decorador, se utiliza para implementar una funcionalidad
+// DECORATOR
+// @Decorator({asd:"asd"})
+// @Primary({})
+// @Politecnica({asda:"asdasd"})
+
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +20,13 @@ import {MasterURlService} from "./services/master-url.service";
     FormsModule,
     HttpModule
   ],
-  providers: [ MasterURlService],
+  providers: [
+    MasterURlService
+  ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
+
+
+

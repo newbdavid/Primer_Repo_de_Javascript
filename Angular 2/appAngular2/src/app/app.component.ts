@@ -1,131 +1,96 @@
 import {Component, OnInit} from "@angular/core";
-import {Http} from "@angular/http";
+import {Response, Http} from "@angular/http";
 import {MasterURlService} from "./services/master-url.service";
+import {Form, NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
-
-
-  //Mejor asi
-  //region Description
-/*  private nombre: string = "Adrian";
-  apellido: string = "Sarzosa";
-
-
-
-
-  //Esto es reemplazado por lo de arriba
-
-  constructor(private nombreConstructor: string,
-  private apellidoConstructor: string){
-    this.nombre=this.nombreConstructor;
-    this.apellido = this.apellidoConstructor;
-  }
-  //*/endregion
-
-  //Segunda CUestion
-  /*
-  apellido="Hola"
-  constructor(){
-    this.apellido = this.saludar();
-    this.saludar2("Moncayo");
-  }
-
-
-  //Ahi debe retornar un string  al poner :string
-  saludar(): string {
-    console.log("Hola")
-    return `hi everyone, mi nombre es: ${this.apellido};`
-  }
-
-  saludar2(apellido:string, nombre?:string) {
-    console.log(`${apellido} y ${nombre}`);
-  }
-*/
-  nombre:string="";
-  apellido:string="";
-
-  error:string ="no hay errores";
+// CTRL A +  -  CTRL + ALT + L
+export class AppComponent implements OnInit {
+  title: string = "Bienvenido a Ingresar Tiendas";
+  nuevaTienda= {};
   tiendas = [];
-
-  constructor(private http: Http){//es el tipo de clase http
-    this.apellido="Moncayo"
-    this.nombre="David"
+  disabledButtons = {
+    NuevaTiendaFormSubmitButton:false
+  };
+  constructor(private _http: Http,
+              private _masterURL: MasterURlService) {
   }
-  ngOnInit(){
-    console.log("On Init")
-    this.apellido="Balseca"
-    this.nombre="Enrique"
-    this.http.get("http://localhost:1337/" + "Tienda")
+  ngOnInit() {
+    this._http.get(this._masterURL.url+"Tienda")
       .subscribe(
-        (res)=>{
-          this.tiendas=res.json();
+        (res:Response)=>{
+          this.tiendas = res.json();
         },
         (err)=>{
           console.log(err);
         }
       )
-
   }
-
-  nombreCompleto():string{
-    return `${this.nombre} ${this.apellido}`
-  }
-
-  hizoClick(){
-    console.log("Hizo Click");
-  }
-
-  hizoFocus(){
-    console.log("Hizo Focus")
-  }
-
-  nuevaTienda:any={};
-
-  crearTienda(formulario) {
+  crearTienda(formulario:NgForm) {
     console.log(formulario);
-
-    this.http.post("http://localhost:1337/" + "Tienda", {
-      nombre: formulario.value.nombre
+    this.disabledButtons.NuevaTiendaFormSubmitButton = true;
+    this._http.post(this._masterURL.url+"Tienda", {
+      nombre:formulario.value.nombre
     }).subscribe(
-      (res) => {
+      (res)=>{
         console.log("No hubo Errores");
         console.log(res);
-        this.nuevaTienda = {}
+        this.tiendas.push()
+        this.nuevaTienda = {};
+        this.disabledButtons.NuevaTiendaFormSubmitButton = false;
       },
-      (err) => {
-        console.log("Ocurrio un error", err);
+      (err)=>{
+        this.disabledButtons.NuevaTiendaFormSubmitButton = false;
+        console.log("Ocurrio un err or",err);
       },
-      () => {
+      ()=>{
         console.log("Termino la función vamos a las casas")
       }
     );
 
 
+
+    //
+    // .post("http://localhost:1337/Tienda", formulario.valores)
+    // .subscribe(
+    //   res=>console.log('Respuesta: ',res),
+    //   err=>console.log('Error: ',err),
+    //   ()=>{
+    //     console.log("Se completo la accion")
+    //   }
+    // );
   }
 
-
-
-  /*crearTienda(formulario){
-    console.log(formulario);
-    this.http
-      .post("http://localhost:1337/Tienda", formulario.valores)
+  borrarTienda(id:number){
+    let parametros = {
+      id:id
+    }
+    this._http.delete(this._masterURL.url+"Tienda/"+parametros.id)
       .subscribe(
         (res)=>{
-          console.log('Respuesta: ',res);
-          this.nuevaTienda={};
-        },
-        err=>console.log('Error: ',err),
-        ()=>{
-          console.log("Se completo la accion")
+          let tiendaBorrada = res.json();
+          this.tiendas = this.tiendas.filter(value=>tiendaBorrada.id!=value.id);
         }
+      )
+  }
 
-      );
-  }*/
+  actualizarTienda(tienda:any){
+    let parametros = {
+      nombre:tienda.nombre
+    }
+    this._http.put(this._masterURL.url+"Tienda/"+tienda.id,parametros)
+      .subscribe(
+        (res:Response)=>{
+          console.log("Respuesta:",res.json());
+        },
+        (err)=>{
+          console.log("Error",err);
+        }
+      )
+  }
 
-  title = 'app works!';
 }
